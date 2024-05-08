@@ -1,0 +1,23 @@
+.labelContainer{
+    align-items: center; /* Corrected property */
+    font-size: 3em; /* Adjusted font size */
+    text-align: center;
+    display: flex; /* Added display property */
+    justify-content: center; /* Added property */
+}
+
+.labelContainer label{
+    padding: 40px;
+}
+
+#button1{
+    margin: auto;
+    display: block;
+    margin-top: 20px; /* Added margin-top */
+    background-color: blue;
+    color: white;
+    padding: 10px 20px; /* Adjusted padding */
+    cursor: pointer; /* Added cursor property */
+    border: none; /* Added to remove default button border */
+    border-radius: 5px; /* Added border radius */
+}

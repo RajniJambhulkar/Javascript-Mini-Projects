@@ -1,0 +1,34 @@
+form{  
+    background-color: honeydew;
+    text-align: centre;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 5px 5px 15px hsl(0, 10%, 27%);
+    max-width: 350px;
+}
+#temperature{
+    border: 10;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+h1{
+    color: brown;
+
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover{
+background-color: lightgreen;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+}

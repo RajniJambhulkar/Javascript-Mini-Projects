@@ -4,6 +4,8 @@ const searchForm = document.getElementById("search-form");
 const searchBox = document.getElementById("search-box");
 const searchResult = document.getElementById("search-result");
 const showMoreBtn = document.getElementById("show-more-btn");
+const imagesContainer = document.getElementById("images-container");
+
 
 let keyword = '';
 let page=1;
@@ -14,7 +16,7 @@ async function searchImages() {
     const response = await fetch(url)
     const data = await response.json()
     if(page===1){
-        searchResult.innerHTML = "";
+        imagesContainer.innerHTML = "";
     }
 
     const results = data.results;
@@ -26,7 +28,7 @@ async function searchImages() {
         imageLink.target = "_blank";
 
         imageLink.appendChild(image);
-        searchResult.appendChild(imageLink);
+        imagesContainer.appendChild(imageLink);
         
     })
     showMoreBtn.style.display = "block";
